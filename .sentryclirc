@@ -1,0 +1,5 @@
+[defaults]
+org = caktus
+project = sample_wagtail
+[auth]
+token = <<FILL IN>>

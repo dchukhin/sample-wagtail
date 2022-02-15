@@ -1,0 +1,37 @@
+{
+  "name": "sample_wagtail",
+  "version": "0.0.1",
+  "private": true,
+  "description": "sample_wagtail",
+  "main": "index.js",
+  "prettier": "eslint-config-vinta/prettier",
+  "scripts": {
+    "dev": "gulp",
+    "build": "NODE_ENV=production ./node_modules/.bin/webpack --progress --config webpack.config.js --bail",
+    "build:css": "sass ./sample_wagtail/assets/styles/sass_entry.scss:./sample_wagtail/static/css/main.css --style compressed"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "@sentry/webpack-plugin": "^1.18.5",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "fs-jetpack": "^4.3.1",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "jquery": "^3.6.0",
+    "prettier": "^2.5.1",
+    "sass": "^1.49.7",
+    "webpack": "^5.68.0",
+    "webpack-bundle-tracker": "^1.4.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-merge": "^5.8.0",
+    "webpack-stream": "^7.0.0"
+  }
+}

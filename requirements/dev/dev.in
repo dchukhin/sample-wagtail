@@ -1,0 +1,19 @@
+# Dev requirements
+-c ../base/base.txt
+
+django-debug-toolbar
+ipython
+invoke
+pre-commit
+black
+coverage
+invoke-kubesae
+awscli
+boto
+
+# For testing
+factory_boy
+
+
+
+
